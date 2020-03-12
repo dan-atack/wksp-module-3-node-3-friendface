@@ -1,0 +1,10 @@
+<div class="sidebar">
+    <h3 class="sidetitle">People you May Know:</h3>
+    <% potentials.forEach(person => {%>
+        <div class="buddy">
+            <a href="/addfriend/<%- person.name %>" >
+                <img class="sidepic" src="<%- person.avatarUrl %>"/>
+            </a> 
+        </div>
+    <% }); %>
+</div>

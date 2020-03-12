@@ -84,10 +84,89 @@ codeblock {
   padding: 12px 14px; }
 
 body {
-  background: #fafafa;
+  background: #e6e6e6;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "head head head head" "sub  sub  sub  side" "  .  face face side" "  .  face face side" "buds buds buds buds"; }
+
+a:link {
+  text-decoration: none; }
+
+h1 {
+  font-size: 64px;
+  margin-top: 8px;
+  padding-bottom: 8px; }
+
+h2 {
+  padding-left: 32px;
+  padding-bottom: 16px; }
+
+.minipic {
+  margin-top: 16px;
+  margin-left: 32px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid darkblue;
+  z-index: 10; }
+
+.head {
+  grid-area: head;
+  display: grid;
+  grid-template-columns: 67% 20% 13%;
+  position: fixed;
+  background-color: #5cd351;
+  height: 82px;
+  width: 100%; }
+
+.subheader {
+  background-color: #5cd351; }
+
+.subhead {
+  position: fixed;
+  grid-area: sub;
+  background-color: #5cd351;
+  margin-top: 82px;
+  width: 100%;
+  border-bottom: 3px solid #169e21; }
+
+.frogface {
+  margin-left: 45%;
+  position: fixed;
+  padding: 16px;
+  background-color: darkgreen;
+  border: 2px solid lightgrey;
+  text-align: center; }
+
+.frog {
+  margin-top: 8px;
+  height: 64px;
+  width: 64px;
+  box-shadow: 0px 0px 6px 6px whitesmoke;
+  border-radius: 50%; }
+
+.frogspan {
+  text-decoration: none;
+  color: white; }
+
+.signin {
+  margin-top: 20%;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+  border: 2px solid #635c5c;
+  padding: 16px 12px;
+  background-color: #206186;
+  box-shadow: 0px 0px 8px 5px #aaa5a5;
+  color: #eceee2; }
+
+.signin-form {
+  margin-top: 8px; }
 
 .main {
   flex: 1 0 auto; }
@@ -117,6 +196,81 @@ body {
   border: 1px solid #cacaca;
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
+
+.friendmain {
+  margin-top: 144px;
+  margin-left: 18vw;
+  align-items: center;
+  text-align: center; }
+
+.face {
+  margin-top: 2%;
+  margin-left: 6%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff00ff;
+  border-radius: 50%;
+  max-width: 75vw;
+  max-height: 75vh;
+  grid-area: face; }
+
+.sidebar {
+  margin-top: 164px;
+  width: 50%;
+  text-align: center;
+  grid-area: side;
+  display: grid;
+  grid-template-areas: "t t t t t" "p p p p p" "p p p p p" "p p p p p" "p p p p p" "p p p p p"; }
+
+.sidetitle {
+  grid-area: t;
+  font-style: oblique;
+  font-size: 32px;
+  border-bottom: 2px solid darkgreen; }
+
+.sidepic {
+  grid-area: p;
+  max-width: 80px;
+  max-height: 800px;
+  border-radius: 50%;
+  margin: 8px 4px; }
+
+.sidepic:hover {
+  box-shadow: 0px 0px 8px 12px greenyellow; }
+
+.friendtitle {
+  margin-top: 4%;
+  font-size: 44px;
+  color: darkblue;
+  font-style: oblique;
+  border-bottom: 1px solid black;
+  grid-area: title; }
+
+.friends {
+  margin-top: 2%;
+  text-align: center;
+  display: grid;
+  grid-template-areas: "title title title" "people people people";
+  grid-area: buds; }
+
+.person {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px 32px; }
+
+.friendface {
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: #ff00ff;
+  width: 240px;
+  height: 240px;
+  margin-bottom: 16px; }
+
+.back {
+  margin-bottom: 64px; }
 
 @media screen and (min-width: 900px) {
   .content {

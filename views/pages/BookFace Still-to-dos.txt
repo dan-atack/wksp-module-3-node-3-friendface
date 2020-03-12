@@ -1,0 +1,17 @@
+1. Clicking Friend's picture brings you to THEIR PAGE:
+
+- keep you as current user
+
+- keep a variable for friendBeingVisited
+
+- bring you to a new page, friend.ejs
+    when you click your friends' faces.
+
+- friend.ejs has similar layout to main,
+    but with no sidebar.
+
+- friend.ejs has their friends at the bottom.
+
+- Return to my face button on friend page.
+
+2. On your page you can add friends from users.

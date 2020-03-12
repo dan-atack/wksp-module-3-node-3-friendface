@@ -1,9 +1,10 @@
 <%- include('../partials/header') %>
-
-<form method='get' action='/getname' class='signin-form'>
-    <label for='firstName'>First name</label>
-    <input type='text' name='firstName' />
-    <button type='submit'>Submit</button>
-</form>
-
+<div class="signin">
+    <p>Welcome to FriendFace! Please Sign in by Entering your First Name!</p>
+    <form method='get' action='/name' class='signin-form'>
+        <label for='firstName'></label>
+        <input type='text' name='firstName' />
+        <button type='submit'>Submit</button>
+    </form>
+</div>
 <%- include('../partials/footer') %>
