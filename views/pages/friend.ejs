@@ -1,0 +1,17 @@
+<%- include("../partials/signedInHeader") %>
+<h2 class="subhead">Welcome to <%= name %>'s FriendFace Page!</h2>
+<div class="friendmain">
+    <img class="face" src="<%- pic %>" alt=`${currentUser.name}`>
+    <div class="friends">
+        <h2 class="friendtitle"><%- name %>'s Cool Friends</h2>
+        <% friends.forEach(friend => { %>
+            <div class="person">
+                <a href="/<%- friend.name %>">
+                <img class="friendface" src="<%- friend.avatarUrl %>" alt="<%- name %>'s friends">
+                </a>
+                <span class="friendname"><%- friend.name %></span>
+            </div>
+        <% }) %>
+    </div>
+    <a class="back" href="/">BACK TO MY PAGE</a>
+</div>
